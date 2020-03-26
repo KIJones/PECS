@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "MyPecs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/Dragging.js"></script>
+<h1>MyPecs</h1>
+<p> PECS page Yo!</p>
+
+<div id="Selection" class="jumbotron" height="100" width =" @ViewBag.optionWidth" ondrop="drop(event)" ondragover="allowDrop(event)" >
+
+</div>
+<div id="Options" class="jumbotron" height="100" width="@ViewBag.optionWidth">
+	@foreach (var image in ViewBag.Images)
+	{
+
+		<img id="@image" src="@image" alt="Placeholder text" height="100" width="100" draggable="true" ondragstart="drag(event)"/>
+	}
+</div>
+
+	
+	
+	

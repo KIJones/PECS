@@ -6,10 +6,21 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\PECSImages\Lego_Play.jpg" />
+    <None Include="wwwroot\PECSImages\Morning.jpg" />
+    <None Include="wwwroot\PECSImages\Night.jpg" />
+    <None Include="wwwroot\PECSImages\Noon.jpg" />
+    <None Include="wwwroot\PECSImages\Play_at_Beach.jpg" />
+    <None Include="wwwroot\PECSImages\Sandbox.jpg" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
   </ItemGroup>
 
 </Project>

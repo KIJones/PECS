@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -13,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using PECS.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace PECS
 {
@@ -72,6 +73,13 @@ namespace PECS
 					name: "default",
 					template: "{controller=Home}/{action=Index}/{id?}");
 			});
+			// Adding access to the static images
+			//app.UseStaticFiles(new StaticFileOptions()
+			//{
+			//	FileProvider = new PhysicalFileProvider(
+			//		Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\\PECSImages")),
+			//	RequestPath = new PathString("/wwwroot/PECSImages")
+			//});
 		}
 	}
 }

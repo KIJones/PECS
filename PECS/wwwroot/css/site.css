@@ -54,3 +54,64 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+/* Custom styling of navbar*/
+body {
+	background-color: #40D7FF;
+}
+
+.navbar {
+	background-color: #40D7FF;
+}
+
+.chevron {
+	box-sizing: border-box;
+	background-color: #40D7FF;
+	/*background-color: #6126FF;*/
+	transition: background-color 1s;
+	text-align: center;
+	border-style: solid;
+	border-width: 2px 1px 2px 1px;
+	color: black;
+	/*border-width: 0;*/
+	border-color: #40D7FF;
+	border-radius: 0px;
+	transition: border-style 0.5s, border-color 0.5s, background-color 0.5s, box-shadow 2s, border-width 0.5s, border-radius 0.5s;
+}
+
+	.chevron:hover {
+		box-sizing: border-box;
+		background-color: #3D12B3;
+		text-align: center;
+		/*transition: background-color 1s;*/
+		border-style: solid;
+		border-width: 2px 2px 2px 2px;
+		border-color: #FFC633;
+		border-radius: 1em;
+		box-shadow: 0 0 20px gold;
+		color: white;
+		transition: border-radius 0.5s, border-style 0.5s, border-color 0.5s, background-color 0.5s, box-shadow 2s, border-width 0.5s;
+	}
+
+
+.navbar-light .navbar-brand {
+	color: grey;
+	transition: color 1s;
+}
+
+	.navbar-light .navbar-brand:hover {
+		color: white;
+		transition: color 1s;
+	}
+
+
+.navbar-light .navbar-nav .nav-link {
+	color: grey;
+	transition: color 1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: white;
+	transition: color 1s;
+}
